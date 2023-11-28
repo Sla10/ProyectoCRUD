@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyecto CRUD </title>
+  <!-- Enlazar el archivo CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Proyecto CRUD</h1>
+    <h2>CRUD para base de datos</h2>
+  </header>
+  <main>
+    <!-- Formulario para ingresar los datos -->
+    <form id="formulario">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad" required>
+      <button type="submit" id="guardar">Guardar</button>
+      <button type="button" id="editar" disabled>Editar</button>
+      <button type="button" id="eliminar" disabled>Eliminar</button>
+    </form>
+    <!-- Tabla para mostrar los datos -->
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se insertarán los datos -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>Creado por Sebastian López</p>
+  </footer>
+  <!-- Enlazar el archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
